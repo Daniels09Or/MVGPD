@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPU</title>
+    <link rel="stylesheet" href="../nodalu.css">
+    <script src="../script.js" defer></script> <!-- JavaScript faila piesaiste -->
+</head>
+<body>
+    <!-- Navigācijas josla -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <form action="../saturs.html" id="satursForm">
+                <input class="nav-button" type="submit" value="Saturs" />
+            </form>
+            <form action="../main.html" id="mainForm">
+                <input class="navbar-title" type="submit" value="Videokarte (GPU)" />
+            </form>
+            <form action="../palidziba.html" id="palidzibaForm">
+                <input class="nav-button" type="submit" value="Palīdzība" />
+            </form>
+        </div>
+    </nav>
+    <!-- Teksts -->
+       <h4 class="rindina1">Kas ir videokarte?</h4>
+       <p>Videokarte (grafikas adapteris) ir datora komponente, kas atbild par attēlu un teksta ģenerēšanu un attēlošanu uz datora ekrāna. Tā var būt integrēta mātesplatē vai kā atsevišķa paplašināšanas plate. Integrētās videokartes ir visbiežāk sastopamās, taču jaudīgākām darbībām, piemēram, datorspēlēm, video apstrādei, un 3D modelēšanai, tiek izmantotas atsevišķas, specializētas videokartes, kas piedāvā augstāku veiktspēju.</p>
+        <h4>No kā sastāv videokarte?</h4>
+        <ul>
+            <li>GPU (grafiskais procesors):<br>
+            Galvenais komponents, kas nodrošina attēlu ģenerēšanu. Ja integrēts, tā funkcionalitāte ir iebūvēta mikroshēmā. GPU ir atbildīgs par visu grafikas apstrādi, un tā jauda nosaka videokartes veiktspēju, īpaši spēlēs vai grafiski intensīvās aplikācijās.</li>
+            <li>Videoatmiņa (VRAM):<br>
+            Glabā attēlojamos attēlus un datus, īpaši svarīgi 3D grafikai un augstas kvalitātes tekstūrām. Lielāks atmiņas apjoms ļauj videokartei glabāt vairāk datu, kas nepieciešami augstas kvalitātes grafikai un smagākām spēlēm. Populārākie video atmiņas tipi ir GDDR5, GDDR6, un GDDR6X.</li>
+            <li>RAMDAC (Random Access Memory Digital-to-Analog Converter):<br>
+            Pārvērš digitālo attēlu signālu analogajā formātā, lai to varētu attēlot uz monitora. Mūsdienās RAMDAC bieži tiek integrēts GPU, kas padara šo komponentu mazāk pamanāmu un efektīvāku.</li>
+            <li>Video BIOS:<br>
+            Programmatūra, kas nosaka videokartes darbību. Tā ietver GPU inicializāciju un konfigurāciju, kā arī īpašas optimizācijas attiecībā uz atmiņu, takts frekvenci un citas darbības.</li>
+        </ul>
+        <h4>Populārie videokaršu ražotāji</h4>
+        <ul>
+            <li>NVIDIA:<br>
+            Piedāvā populāras GeForce videokartes, kas paredzētas gan ikdienas lietošanai, gan augstas veiktspējas spēlēm. GeForce kartes tiek atzītas par vienām no visveiksmīgākajām, pateicoties to stabilajai veiktspējai un tehnoloģiju inovācijām, piemēram, DLSS (Deep Learning Super Sampling) un Ray Tracing.</li>
+            <ul>
+                <li>GeForce GTX: Vidēja līmeņa un augstākas klases modeļi, kas piemēroti intensīvām spēlēm un grafikas aplikācijām. GTX kartes ir populāras spēļu entuziastu vidū, piedāvājot labu līdzsvaru starp cenu un veiktspēju.</li>
+                <li>GeForce RTX: Jaudīgākie modeļi ar Ray Tracing un DLSS tehnoloģijām, kas nodrošina augstākas kvalitātes grafiku un labāku veiktspējas efektivitāti, īpaši spēlēs, kas atbalsta šīs funkcijas. RTX 4090 un RTX 4080 ir piemēri, kas nosaka jaunu veiktspējas standartu.</li>
+            </ul>
+            <li>AMD:<br>
+            Piedāvā Radeon sēriju, kas ir piemērota dažādiem lietotājiem. Radeon RX kartes ir izveidotas kā konkurenti NVIDIA GeForce modeļiem un bieži piedāvā labu cenas un kvalitātes attiecību.</li>
+            <ul>
+                <li>Radeon RX 5000 un RX 6000 sērijas: Augstas veiktspējas grafikas kartes, kas konkurē ar NVIDIA GTX un RTX kartēm. AMD ir ieviesusi arī Ray Tracing atbalstu savās RX 6000  un 7000  sērijas kartēs.</li>
+            </ul>
+        </ul>
+        <h4>Svarīgi parametri, izvēloties videokarti</h4>
+        <ul>
+            <li>Atmiņas tips:</li>
+            <ul>
+                <li>DDR (DDR2, DDR3, DDR4) – lielāks skaitlis norāda uz lielāku ātrumu, bet šie modeļi ir salīdzinoši novecojuši un tiek aizstāti ar GDDR tehnoloģiju.</li>
+                <li>GDDR (GDDR5, GDDR6) – labāka veiktspēja, lielāka pārsūtīšanas ātrums un zemāks enerģijas patēriņš. GDDR6X ir jaunākā tehnoloģija, kas piedāvā vēl ātrāku datu pārsūtīšanu, kas ir īpaši svarīgi augstas izšķirtspējas un 4K grafikas attēlošanā.</li>
+            </ul>
+            <li>Dzesēšana:<br>
+            Jo jaudīgāka videokarte, jo intensīvāka būs tās dzesēšana. Augstas klases modeļiem var būt vienkārši ventilatori vai pat sarežģītākas ūdens dzesēšanas sistēmas, kas palīdz nodrošināt stabilu darbību zem lielas slodzes.</li>
+            <li>Maksimālā izšķirtspēja:<br>
+            Videokartes izšķirtspējai jābūt atbilstošai ekrāna izšķirtspējai. Mūsdienās daudzām videokartēm ir atbalsts 4K un pat 8K izšķirtspējai, kas ir īpaši svarīgi, ja plānojat skatīties augstas kvalitātes video vai spēlēt spēles ar augstākajiem grafikas iestatījumiem.</li>
+            <li>Takts frekvence (Clock Speed):<br>
+            Augstāka takts frekvence norāda uz ātrāku datu apstrādi. Tomēr jāatceras, ka veiktspēju nosaka ne tikai takts frekvence, bet arī GPU arhitektūra un atmiņas tips.</li>
+            <li>Barošanas avots:<br>
+            Videokartes var patērēt ievērojamu enerģiju, īpaši jaudīgākie modeļi, piemēram, RTX 4090. Pirms izvēlēties videokarti, pārliecinieties, ka jūsu barošanas avots var nodrošināt pietiekamu jaudu, lai atbalstītu visus jūsu datora komponentus.</li>
+        </ul>
+        <h4>Kā izvēlēties videokarti?</h4>
+        <p>Izvēloties videokarti, ir svarīgi ņemt vērā savu budžetu un lietošanas vajadzības. Spēlēm paredzētām kartēm jābūt ar lielāku atmiņas apjomu, augstāku takts frekvenci un jaudīgu GPU, savukārt ikdienas darbam ar biroja programmām pietiks ar lētāku modeli, kas nodrošina pamatveiktspēju.</p>
+    <!-- Pogas -->
+    <div class="navigation-buttons" >
+        <form id="atpakalForm">
+            <button type="submit" class="nav-button left">← Atpakaļ</button>
+        </form>
+        <form  id="talak3Form">
+            <button type="submit" class="nav-button right">Tālāk(RAM) →</button>
+        </form>
+    </div>
+</body>
+</html>
