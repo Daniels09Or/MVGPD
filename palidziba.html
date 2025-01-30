@@ -29,14 +29,25 @@
 
 
 
-    <div class="form-container">
-        <h2>Uzdodiet Jautājumu</h2>
-        <form id="questionForm">
-            <label for="question">Jūsu jautājums:</label>
-            <textarea id="question" name="question" rows="4" placeholder="Ierakstiet savu jautājumu šeit..." required></textarea>
-            <button type="submit">Iesniegt</button>
-        </form>
-    </div>
+        <div class="form-container">
+            <h2>Atsauksmju Forma</h2>
+            <form class="feedback-form" id="feedbackForm">
+                <label for="rating">Kāds bija mūsu serviss (1-10):</label>
+                <input type="number" id="rating" name="rating" min="1" max="10" required>
+    
+                <label for="service">Kādu pakalpojumu izvēlējāties?</label>
+                <textarea id="service" name="service" rows="2" placeholder="Ierakstiet savu atbildi šeit..." required></textarea>
+    
+                <label for="repeatCustomer">Vai būsiet atkārtots klients?</label>
+                <select id="repeatCustomer" name="repeatCustomer" required>
+                    <option value="">Izvēlieties...</option>
+                    <option value="yes">Jā</option>
+                    <option value="no">Nē</option>
+                </select>
+    
+                <button type="submit">Iesniegt</button>
+            </form>
+        </div>
 
     
 
