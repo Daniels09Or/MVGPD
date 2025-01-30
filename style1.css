@@ -214,19 +214,24 @@ body {
     font-weight: bold;
     color: #555;
 }
+.feedback-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
 
-.form-container textarea {
-    width: 380px;
+.feedback-form input, .feedback-form textarea, .feedback-form select {
+    width: 97%;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    resize: none;
     font-size: 16px;
 }
 
-.form-container button {
-    width: 200px;
+.feedback-form button {
+    width: 100%;
     padding: 10px;
     background-color: #007BFF;
     color: #fff;
@@ -236,7 +241,7 @@ body {
     cursor: pointer;
 }
 
-.form-container button:hover {
+.feedback-form button:hover {
     background-color: #0056b3;
 }
 .idkk{
