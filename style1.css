@@ -191,58 +191,45 @@ body {
     height: 100vh;
 }
 
-/* Stili tikai jautājumu formai */
 .form-container {
-    background-color: #fff;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 420px;
-    max-width: 420px;
-    margin-right: 37.5vw;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-.form-container h2 {
+h2 {
     text-align: center;
-    margin-bottom: 20px;
     color: #333;
 }
-
-.form-container label {
+label {
     display: block;
-    margin-bottom: 8px;
+    margin-top: 10px;
     font-weight: bold;
-    color: #555;
 }
-.feedback-form label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-    color: #555;
-}
-
-.feedback-form input, .feedback-form textarea, .feedback-form select {
+input, textarea {
     width: 97%;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-top: 5px;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
+    border-radius: 5px;
 }
-
-.feedback-form button {
+button {
+    display: block;
     width: 100%;
     padding: 10px;
-    background-color: #007BFF;
-    color: #fff;
+    margin-top: 15px;
+    background: #007bff;
+    color: white;
     border: none;
-    border-radius: 4px;
-    font-size: 16px;
+    border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
 }
-
-.feedback-form button:hover {
-    background-color: #0056b3;
+button:hover {
+    background: #0056b3;
 }
 .idkk{
     margin-bottom: 650px;
