@@ -61,37 +61,37 @@ if(document.getElementById('cpuForm')!=null){
 // Pievieno 'submit' notikumu katram formam, kas veic pāreju uz citu lapu, lai arī aktivizētu fade-out pirms pārejas
 document.getElementById('cpuForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Novērš formu noklusējuma iesniegšanu
-    applyFadeOutAndNavigate('cpu.html', 1000); // Pievieno 'fade-out' un pāriet pēc 1000ms
+    applyFadeOutAndNavigate('sites/cpu.html', 1000); // Pievieno 'fade-out' un pāriet pēc 1000ms
 });
 }if(document.getElementById('mbForm')!=null){
 document.getElementById('mbForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Novērš formu noklusējuma iesniegšanu
-    applyFadeOutAndNavigate('Mb.html', 1000); // Pievieno 'fade-out' un pāriet pēc 1000ms
+    applyFadeOutAndNavigate('sites/Mb.html', 1000); // Pievieno 'fade-out' un pāriet pēc 1000ms
 });
 }if(document.getElementById('gpuForm')!=null){
 document.getElementById('gpuForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Novērš formu noklusējuma iesniegšanu
-    applyFadeOutAndNavigate('gpu.html', 1000); // Pievieno 'fade-out' un pāriet pēc 1000ms
+    applyFadeOutAndNavigate('sites/gpu.html', 1000); // Pievieno 'fade-out' un pāriet pēc 1000ms
 });
 }if(document.getElementById('ramForm')!=null){
 document.getElementById('ramForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Novērš formu noklusējuma iesniegšanu
-    applyFadeOutAndNavigate('ram.html', 1000); // Pievieno 'fade-out' un pāriet pēc 1000ms
+    applyFadeOutAndNavigate('sites/ram.html', 1000); // Pievieno 'fade-out' un pāriet pēc 1000ms
 });
 }if(document.getElementById('ssdForm')!=null){
 document.getElementById('ssdForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Novērš formu noklusējuma iesniegšanu
-    applyFadeOutAndNavigate('ssd.html', 1000); // Pievieno 'fade-out' un pāriet pēc 1000ms
+    applyFadeOutAndNavigate('sites/ssd.html', 1000); // Pievieno 'fade-out' un pāriet pēc 1000ms
 });
 }if(document.getElementById('psuForm')!=null){
 document.getElementById('psuForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Novērš formu noklusējuma iesniegšanu
-    applyFadeOutAndNavigate('psu.html', 1000); // Pievieno 'fade-out' un pāriet pēc 1000ms
+    applyFadeOutAndNavigate('sites/psu.html', 1000); // Pievieno 'fade-out' un pāriet pēc 1000ms
 });
 }if(document.getElementById('coolingForm')!=null){
 document.getElementById('coolingForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Novērš formu noklusējuma iesniegšanu
-    applyFadeOutAndNavigate('cooling.html', 1000); // Pievieno 'fade-out' un pāriet pēc 1000ms
+    applyFadeOutAndNavigate('sites/cooling.html', 1000); // Pievieno 'fade-out' un pāriet pēc 1000ms
 });
 }if(document.getElementById('atpakalForm')!=null){
 document.getElementById('atpakalForm').addEventListener('submit', function(event) {
