@@ -55,7 +55,7 @@ document.getElementById('palidzibaForm').addEventListener('submit', function(eve
 // Pievieno 'submit' notikumu katram formam, lai aktivizētu fade-out pirms pārejas
 document.getElementById('satursForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Novērš formu noklusējuma iesniegšanu
-    applyFadeOutAndNavigate('saturs.html', 1000); // Pievieno 'fade-out' un pāriet pēc 1000ms
+    applyFadeOutAndNavigate('sites/saturs.html', 1000); // Pievieno 'fade-out' un pāriet pēc 1000ms
 });
 if(document.getElementById('cpuForm')!=null){
 // Pievieno 'submit' notikumu katram formam, kas veic pāreju uz citu lapu, lai arī aktivizētu fade-out pirms pārejas
@@ -101,12 +101,12 @@ document.getElementById('atpakalForm').addEventListener('submit', function(event
 }if(document.getElementById('talak1Form')!=null){
 document.getElementById('talak1Form').addEventListener('submit', function(event) {
     event.preventDefault(); // Novērš formu noklusējuma iesniegšanu
-    applyFadeOutAndNavigate('sites/Mb.html', 1000); // Pievieno 'fade-out' un pāriet pēc 1000ms
+    applyFadeOutAndNavigate('Mb.html', 1000); // Pievieno 'fade-out' un pāriet pēc 1000ms
 });
 }if(document.getElementById('talak2Form')!=null){
 document.getElementById('talak2Form').addEventListener('submit', function(event) {
     event.preventDefault(); // Novērš formu noklusējuma iesniegšanu
-    applyFadeOutAndNavigate('sites/gpu.html', 1000); // Pievieno 'fade-out' un pāriet pēc 1000ms
+    applyFadeOutAndNavigate('gpu.html', 1000); // Pievieno 'fade-out' un pāriet pēc 1000ms
 });
 }if(document.getElementById('talak3Form')!=null){
 document.getElementById('talak3Form').addEventListener('submit', function(event) {
