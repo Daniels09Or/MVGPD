@@ -55,7 +55,7 @@ document.getElementById('palidzibaForm').addEventListener('submit', function(eve
 // Pievieno 'submit' notikumu katram formam, lai aktivizētu fade-out pirms pārejas
 document.getElementById('satursForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Novērš formu noklusējuma iesniegšanu
-    applyFadeOutAndNavigate('sites/saturs.html', 1000); // Pievieno 'fade-out' un pāriet pēc 1000ms
+    applyFadeOutAndNavigate('saturs.html', 1000); // Pievieno 'fade-out' un pāriet pēc 1000ms
 });
 if(document.getElementById('cpuForm')!=null){
 // Pievieno 'submit' notikumu katram formam, kas veic pāreju uz citu lapu, lai arī aktivizētu fade-out pirms pārejas
