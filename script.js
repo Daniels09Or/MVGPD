@@ -144,3 +144,63 @@ document.getElementById('questionForm').addEventListener('submit', function(even
     event.preventDefault(); // Lai neatsvaidzina lapu
     alert('Jūsu jautājums tika aizsūtīts!');
 });
+
+function startSnowfall() {
+    const canvas = document.createElement("canvas");
+    canvas.id = "snowCanvas";
+    document.body.appendChild(canvas);
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    canvas.style.position = "fixed";
+    canvas.style.top = "0";
+    canvas.style.left = "0";
+    canvas.style.pointerEvents = "none";
+    
+    const ctx = canvas.getContext("2d");
+    let flakes = [];
+
+    function createFlakes() {
+        for (let i = 0; i < 100; i++) {
+            flakes.push({
+                x: Math.random() * canvas.width,
+                y: Math.random() * canvas.height,
+                radius: Math.random() * 3 + 2,
+                speedY: Math.random() * 2 + 1,
+                speedX: (Math.random() - 0.5) * 1
+            });
+        }
+    }
+    
+    function drawFlakes() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.fillStyle = "white";
+        ctx.beginPath();
+        flakes.forEach(flake => {
+            ctx.moveTo(flake.x, flake.y);
+            ctx.arc(flake.x, flake.y, flake.radius, 0, Math.PI * 2);
+        });
+        ctx.fill();
+        moveFlakes();
+    }
+    
+    function moveFlakes() {
+        flakes.forEach(flake => {
+            flake.y += flake.speedY;
+            flake.x += flake.speedX;
+            
+            if (flake.y > canvas.height) {
+                flake.y = -flake.radius;
+                flake.x = Math.random() * canvas.width;
+            }
+        });
+    }
+    
+    function updateSnowfall() {
+        drawFlakes();
+        requestAnimationFrame(updateSnowfall);
+    }
+    
+    createFlakes();
+    updateSnowfall();
+}
+
