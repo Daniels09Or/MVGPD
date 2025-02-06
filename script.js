@@ -66,7 +66,7 @@ document.getElementById('cpuForm').addEventListener('submit', function(event) {
 }if(document.getElementById('mbForm')!=null){
 document.getElementById('mbForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Novērš formu noklusējuma iesniegšanu
-    applyFadeOutAndNavigate('sites/Mb.html', 1000); // Pievieno 'fade-out' un pāriet pēc 1000ms
+    applyFadeOutAndNavigate('Mb.html', 1000); // Pievieno 'fade-out' un pāriet pēc 1000ms
 });
 }if(document.getElementById('gpuForm')!=null){
 document.getElementById('gpuForm').addEventListener('submit', function(event) {
