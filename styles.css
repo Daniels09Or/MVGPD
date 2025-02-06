@@ -154,3 +154,18 @@ html {
     margin-top: 70px;
     margin-left: 29vw;
 }
+
+#startSnow {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background: linear-gradient(45deg, #2196F3, #21CBF3);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#startSnow:hover {
+    background: linear-gradient(45deg, #21CBF3, #2196F3);
+}
