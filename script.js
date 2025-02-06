@@ -131,7 +131,7 @@ document.getElementById('talak6Form').addEventListener('submit', function(event)
 }if(document.getElementById('talak7Form')!=null){
 document.getElementById('talak7Form').addEventListener('submit', function(event) {
     event.preventDefault(); // Novērš formu noklusējuma iesniegšanu
-    applyFadeOutAndNavigate('../hz/noverte.html', 1000); // Pievieno 'fade-out' un pāriet pēc 1000ms
+    applyFadeOutAndNavigate('../noverte.html', 1000); // Pievieno 'fade-out' un pāriet pēc 1000ms
 });
 }if(document.getElementById('talak8Form')!=null){
     document.getElementById('talak8Form').addEventListener('submit', function(event) {
