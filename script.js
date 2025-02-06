@@ -24,7 +24,7 @@ function applyFadeOutAndNavigate(formId, delay) {
     // Pievieno 'fade-out' klasi ķermenim
     fade(document.body);
     if(window.location.href.indexOf("/hz/sites")>-1){
-        formId="../../hz/"+formId;
+        formId="../../"+formId;
     }else if(window.location.href.indexOf("/hz/")>-1){
         formId=formId;
     } 
@@ -66,7 +66,7 @@ document.getElementById('cpuForm').addEventListener('submit', function(event) {
 }if(document.getElementById('mbForm')!=null){
 document.getElementById('mbForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Novērš formu noklusējuma iesniegšanu
-    applyFadeOutAndNavigate('Mb.html', 1000); // Pievieno 'fade-out' un pāriet pēc 1000ms
+    applyFadeOutAndNavigate('sites/Mb.html', 1000); // Pievieno 'fade-out' un pāriet pēc 1000ms
 });
 }if(document.getElementById('gpuForm')!=null){
 document.getElementById('gpuForm').addEventListener('submit', function(event) {
